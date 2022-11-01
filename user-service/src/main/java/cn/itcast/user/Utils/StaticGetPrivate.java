@@ -1,4 +1,4 @@
-package cn.itcast.user;
+package cn.itcast.user.Utils;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.javamail.JavaMailSender;
