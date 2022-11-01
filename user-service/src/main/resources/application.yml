@@ -2,7 +2,7 @@ server:
   port: 7081
 spring:
   datasource:
-    url: jdbc:mysql://rm-bp132y428x25nz0cqio.mysql.rds.aliyuncs.com:3306/cloud_user?useSSL=false
+    url: jdbc:mysql://139.9.92.208:3306/kkfileview?useSSL=false
     username: root
     password: asD484942
     driver-class-name: com.mysql.jdbc.Driver
@@ -15,6 +15,7 @@ mybatis:
   type-aliases-package: cn.itcast.user.pojo
   configuration:
     map-underscore-to-camel-case: true
+  mapperLocations: classpath*:mapper/*Mapper.xml
 logging:
   level:
     cn.itcast: debug
