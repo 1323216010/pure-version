@@ -117,4 +117,21 @@ public class MethodUtils {
         return false;
     }
 
+    /*String转Url字符串*/
+    public static String stringToUrl(String url) {
+        char[] a = url.toCharArray();
+        url = "";
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] == '+') {
+                url = url + "%2B";
+            }else if (a[i] == '=') {
+                url = url + "%3D";
+            }
+            else {
+                url = url + a[i];
+            }
+        }
+        return url;
+    }
+
 }
